@@ -1,0 +1,29 @@
+/* Reservation Area CSS */
+.reservation {
+    .reservation-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 3rem;
+        
+        .reservation-image {
+            flex: 1 1 40rem;
+        }
+
+        .reservation-form {
+            flex: 1 1 40rem;
+            padding: 3rem 2rem;
+            border-radius: 0.5rem;
+            box-shadow: $box_shadow;
+
+            .reservation-input {
+                margin: 0.5rem 0;
+
+                h3 {
+                    color: $lite_gray;
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}

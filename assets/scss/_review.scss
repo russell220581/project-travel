@@ -1,0 +1,36 @@
+/* Review Area CSS */
+.review {
+    .review-slider {
+        .review-wrap {
+            .review-slide {
+                background-color: $white;
+                border-radius: 0.5rem;
+                padding: 3rem 2rem;
+                text-align: center;
+                box-shadow: $box_shadow;
+
+                img {
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 50%;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                    line-height: 1.5;
+                    margin: 1rem 0 0;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+
+                .stars {
+                    margin-top: 1rem;
+                    font-size: 1.3rem;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

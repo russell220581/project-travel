@@ -1,0 +1,55 @@
+/* Gallery Area CSS */
+.gallery {
+    background-color: $bg_gray;
+
+    .gallery-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        .gallery-item {
+            position: relative;
+            flex: 1 1 35rem;
+            box-shadow: $box_shadow;
+            background-color: $white;
+            padding: 1rem;
+            overflow: hidden;
+
+            .gallery-image {
+                width: 100%;
+                height: 28rem;
+            }
+
+            .gallery-content {
+                position: absolute;
+                top: -101%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $bg_transparent;
+                color: $white;
+                padding: 0 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h3 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    padding: 1rem 0;
+                    text-align: center;
+                }
+            }
+
+            &:hover {
+                .gallery-content {
+                    top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    transition: all 200ms linear;
+}
+
+*::selection {
+    background-color: $primary;
+    color: $white;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+
+    @include breakpoint-down(medium) {
+        font-size: 55%;
+    }
+
+    @include breakpoint-down(small) {
+        font-size: 50%;
+    }
+}
+
+body {    
+    color: $dark;
+}
+
+.container {
+    width: 85%;
+    max-width: 140rem;
+    margin: 0 auto;
+
+    &.fluid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @include breakpoint-down(small) {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    background-color: $primary;
+    border: 0.2rem solid $primary;
+    color: $white;
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0.8rem 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $btn_hover;
+        color: $primary;
+    }
+}
+
+.section {
+    padding: 5rem 0;
+
+    @include breakpoint-up(large) {
+        padding: 8rem 0;
+    }
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    span {
+        background-color: $btn_hover;
+        color: $primary;
+        font-size: 3.5rem;
+        font-weight: 800;
+        padding: 0.2rem 1rem;
+
+        &.space {
+            background-color: transparent;
+        }
+        
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+
+    .form-control {
+        flex: 1 1 20rem;
+    }
+}
+
+.form-control {
+    border: 0.1rem solid $lite_shadow;
+    color: $dark;
+    font-size: 1.7rem;
+    padding: 1rem;
+    margin: 0.6rem 0;
+    width: 100%;
+    text-transform: none;
+
+    &:focus {
+        border: 0.1rem solid $primary;
+    }
+
+    &::placeholder {
+        color: $shadow;
+        text-transform: capitalize;
+    }
+}
+
+textarea {
+    resize: none;
+    min-height: 15rem;
+}

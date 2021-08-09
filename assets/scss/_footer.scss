@@ -1,0 +1,47 @@
+/* Footer Area CSS */
+.footer {
+    background-color: $dark;
+    color: $white;
+    padding: 5rem 0;
+
+    .widget-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        .widget {
+            flex: 1 1 25rem;
+
+            h3 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            ul {
+                padding-left: 1.5rem;
+
+                li {
+                    font-size: 1.5rem;
+                    padding-bottom: 0.5rem;
+
+                    a {
+                        color: $white;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .copyright-wrap {
+        border-top: 0.1rem solid $lite_gray;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+}

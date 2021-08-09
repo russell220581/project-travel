@@ -1,0 +1,22 @@
+/* Contact Area CSS */
+.contact {
+    padding: 4rem 0 3rem;
+    .contact-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+
+        .contact-image {
+            flex: 1 1 35rem;
+        }
+
+        .contact-form {
+            flex: 1 1 50rem;
+            padding: 4rem 2rem;
+            border-radius: 0.5rem;
+            box-shadow: $box_shadow;
+        }
+    }
+}
